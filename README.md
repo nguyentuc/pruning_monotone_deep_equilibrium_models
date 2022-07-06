@@ -1,20 +1,17 @@
 # Pruning at Initialization for Monotone DEQ
 
-
 ## Requirements
-Compatible with python 3.5+ and known to work with pytorch 1.4, torchvision 0.5, and numpy 1.18. Can install with `pip install -r requirements.txt`.
+The code was tested on python 3.8.13
+# Conda install library
+conda install pytorch==1.7.1 torchvision==0.8.2 torchaudio==0.7.2 cudatoolkit=11.0 -c pytorch
+conda install numpy==1.18.5
+conda install -c conda-forge tqdm
+conda install -c conda-forge wandb
 
 ## Run
-`
-python run_exps.py --is_pruning --pruner rand --sparsity 0.9 --dataset mnist --model SingleFcNet --sp PR
-`
-
-## TODO
-- Add mondeq arguments, e.g, out_dim, out_channels, max_iters, etc., 
-- Add wandb to log results
-- Modify logging name to log with different mondeq arguments 
+Running script are available in the scripts folder.
 
 ## Reference 
-*MonDEQ codebase is from [the paper](https://arxiv.org/abs/2006.08591) by Ezra Winston and [Zico Kolter](http://zicokolter.com).*
+*MonDEQ codebase is from [the paper](https://arxiv.org/abs/2006.08591)
 
-*Pruning codebase is from [the paper](https://arxiv.org/abs/2006.05467) by Tanaka*
+*Pruning codebase is from [the paper](https://arxiv.org/abs/2006.05467)
