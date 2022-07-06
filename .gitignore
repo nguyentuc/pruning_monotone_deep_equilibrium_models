@@ -1,0 +1,7 @@
+wandb
+logging
+__pycache__
+*.ipynb
+data
+test_fft.__pycache__
+mnist_fc_model_trained.pt
